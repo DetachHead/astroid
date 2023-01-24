@@ -52,6 +52,9 @@ license-files = ["LICENSE", "CONTRIBUTORS.txt"]  # Keep in sync with setup.cfg
 [tool.setuptools.packages.find]
 include = ["astroid*"]
 
+[tool.setuptools.package-data]
+pylint = ["py.typed"]
+
 [tool.setuptools.dynamic]
 version = {attr = "astroid.__pkginfo__.__version__"}
 
